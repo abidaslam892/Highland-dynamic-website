@@ -1,0 +1,31 @@
+/* Breadcrumb Navigation Styles */
+.breadcrumb {
+    background: #f8f9fa;
+    padding: 15px 0;
+    border-bottom: 1px solid var(--border-color);
+    font-size: 14px;
+    margin-top: 70px; /* Account for fixed header */
+}
+
+.breadcrumb a {
+    color: var(--topiarius-green);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.breadcrumb a:hover {
+    color: var(--topiarius-green-dark);
+    text-decoration: underline;
+}
+
+.breadcrumb span {
+    color: var(--text-light);
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .breadcrumb {
+        font-size: 12px;
+        padding: 10px 0;
+    }
+}

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highland - Category Plant Selection</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/theme.css">
+    <link rel="stylesheet" href="assets/css/topiarius-theme.css">
+    <link rel="stylesheet" href="assets/css/dropdown-fix.css">
+    <link rel="stylesheet" href="assets/css/ivory-search.min.css">
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="assets/css/astra-style.min.css">
+    <link rel="stylesheet" href="assets/css/main-page-styles.css">
+    <style>
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(26, 77, 46, 0.7), rgba(26, 77, 46, 0.7)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%231a4d2e" width="1200" height="600"/></svg>');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 200px 0 120px;
+            margin-top: 70px;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: 200;
+            letter-spacing: 4px;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+        }
+        
+        .hero p {
+            font-size: 1.4rem;
+            font-weight: 300;
+            margin-bottom: 40px;
+            opacity: 0.95;
+        }
+        
+        /* Section Styling */
+        section {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .section-title h2 {
+            font-size: 2.5rem;
+            font-weight: 300;
+            letter-spacing: 2px;
+            color: var(--text-dark);
+            margin-bottom: 15px;
+        }
+        
+        .section-title p {
+            font-size: 1.1rem;
+            color: var(--text-light);
+        }
+        
+        /* Services Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .service-card {
+            background: white;
+            border: 1px solid var(--border-color);
+            padding: 40px 30px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .service-card:hover {
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transform: translateY(-5px);
+            border-color: var(--topiarius-green);
+        }
+        
+        .service-card h3 {
+            font-size: 1.4rem;
+            font-weight: 400;
+            margin-bottom: 15px;
+            color: var(--topiarius-green);
+        }
+        
+        .service-card p {
+            color: var(--text-light);
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+        
+        .service-card a {
+            color: var(--topiarius-green);
+            text-decoration: none;
+            font-weight: 500;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+        }
+        
+        /* Process Steps */
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+        }
+        
+        .process-step {
+            text-align: center;
+        }
+        
+        .process-number {
+            width: 60px;
+            height: 60px;
+            background: var(--topiarius-green);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin: 0 auto 20px;
+        }
+        
+        .process-step h3 {
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+        
+        .process-step p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            background: var(--topiarius-green);
+            color: white;
+            text-align: center;
+            padding: 80px 0;
+        }
+        
+        .cta-section h2 {
+            font-size: 2.5rem;
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+        
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 35px;
+            opacity: 0.9;
+        }
+        
+        .btn-white {
+            background: white;
+            color: var(--topiarius-green);
+            border-color: white;
+        }
+        
+        .btn-white:hover {
+            background: transparent;
+            color: white;
+        }
+        
+        /* Responsive */
+        @media (max-width: 968px) {
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .process-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon-highland.svg">
+    <link rel="alternate icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+    <link rel="alternate icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+    <link rel="stylesheet" href="assets/css/typography-fix.css">
+    <link rel="stylesheet" href="assets/css/spacing-fix.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <a href="index.html" class="logo"><img src="assets/images/highland-logo.svg" alt="Highland Logo">Highland</a>
+            
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li class="has-dropdown">
+                    <a href="offerings.html">Our Offerings</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="design.html">Landscape Design & Architecture</a></li>
+                        <li><a href="construction.html">Landscape Construction Services</a></li>
+                        <li><a href="seasonal.html">Luxury Seasonal Rotations</a></li>
+                        <li><a href="maintenance.html">Landscape Maintenance Services</a></li>
+                        <li><a href="luxury.html">Luxury Budget Pathways</a></li>
+                        <li><a href="special-projects.html">Special Projects</a></li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <a href="portfolio.html">Our Portfolio</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="portfolio.html#construction">Construction Portfolio</a></li>
+                        <li><a href="portfolio.html#design">Design Studio Portfolio</a></li>
+                        <li><a href="portfolio.html#seasonal">Seasonal Rotations Portfolio</a></li>
+                        <li><a href="portfolio.html#gardening">Fine Gardening Portfolio</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">About Us</a></li>
+                <li class="has-dropdown">
+                    <a href="resources.html">Resources</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="resources.html#guides">Guides & Tips</a></li>
+                        <li><a href="resources.html#faqs">FAQs</a></li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <a href="areas-served.html">Areas Served</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="areas-served.html#mountain">Mountain Region</a></li>
+                        <li><a href="areas-served.html#alpine">Alpine Communities</a></li>
+                        <li><a href="areas-served.html#highland">Highland Areas</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="shop.html">Shop</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    </header>
+    <div class="breadcrumbs">
+        <div class="container-wide">
+            <a href="index.html">Home</a> / <a href="blog.html">Blog</a> / <span>Plant Selection</span>
+        </div>
+    </div>
+    <section class="page-hero">
+        <div class="container-wide">
+            <h1>Plant Selection</h1>
+            <p>Expert guidance on choosing plants for high-altitude mountain gardens</p>
+        </div>
+    </section>
+    <section class="blog-section">
+        <div class="container-wide">
+            <p style="text-align: center; padding: 60px 20px;">Articles in this category coming soon. Check back for plant selection guides!</p>
+            <div style="text-align: center;"><a href="blog.html" class="btn-primary">← Back to Blog</a></div>
+        </div>
+    </section>
+    <script src="js/script.js"></script>
+
+    <script src="assets/js/topiarius-nav.js"></script>
+    <script src="assets/js/ivory-search.js"></script>
+</body>
+</html>

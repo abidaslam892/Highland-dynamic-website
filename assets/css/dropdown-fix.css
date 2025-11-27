@@ -1,0 +1,112 @@
+/* Dropdown Menu - Topiarius Style Format */
+
+/* Make sure parent li has relative positioning */
+.nav-menu li.has-dropdown {
+    position: relative;
+}
+
+/* Dropdown menu - Clean white background */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #ffffff;
+    border: none;
+    border-radius: 0;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 0;
+    min-width: 280px;
+    z-index: 10000 !important;
+    margin-top: 0;
+    pointer-events: auto !important;
+}
+
+/* Show dropdown on hover */
+.nav-menu li.has-dropdown:hover .dropdown-menu,
+.nav-menu li.has-dropdown:focus-within .dropdown-menu {
+    display: block !important;
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Ensure dropdown items are clickable */
+.dropdown-menu li {
+    list-style: none;
+    display: block;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.dropdown-menu li:last-child {
+    border-bottom: none;
+}
+
+.dropdown-menu li a {
+    padding: 16px 24px;
+    display: block;
+    color: #333333;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    cursor: pointer !important;
+    pointer-events: auto !important;
+    font-size: 15px;
+    font-weight: 400;
+    background: #ffffff;
+}
+
+.dropdown-menu li a:hover,
+.dropdown-menu li a:focus {
+    background-color: #1a4d2e;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Ensure parent link is also clickable */
+.nav-menu li.has-dropdown > a {
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+/* Arrow indicator */
+.nav-menu li.has-dropdown > a::after {
+    content: '▼';
+    font-size: 0.6rem;
+    margin-left: 6px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.nav-menu li.has-dropdown:hover > a::after {
+    transform: rotate(180deg);
+}
+
+/* Mobile dropdown adjustments */
+@media (max-width: 968px) {
+    .dropdown-menu {
+        position: static;
+        box-shadow: none;
+        border: none;
+        border-left: 3px solid #1a4d2e;
+        margin-left: 20px;
+        margin-top: 8px;
+    }
+    
+    .nav-menu li.has-dropdown > a::after {
+        float: right;
+    }
+}
+
+/* Ensure nav doesn't block dropdowns */
+.nav,
+.header {
+    position: relative;
+    z-index: 100;
+}
+
+/* Prevent any overlay issues */
+.nav-menu {
+    z-index: 99;
+}
