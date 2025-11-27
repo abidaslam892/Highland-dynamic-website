@@ -164,8 +164,8 @@ a:hover {
 
 /* Header / Navigation */
 .header {
-    background: var(--topiarius-green);
-    border-bottom: 1px solid var(--topiarius-green-dark);
+    background: #ffffff;
+    border-bottom: 1px solid var(--topiarius-green);
     padding: 20px 0;
     position: sticky;
     top: 0;
@@ -188,7 +188,7 @@ a:hover {
     letter-spacing: 1px;
     text-transform: uppercase;
     font-size: 22px;
-    color: white;
+    color: var(--topiarius-green);
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -203,6 +203,7 @@ a:hover {
     letter-spacing: 1px;
     text-transform: uppercase;
     font-size: 22px;
+    color: var(--topiarius-green);
 }
 
 .logo img {
@@ -246,7 +247,7 @@ a:hover {
 .main-navigation ul > li > a {
     padding: 18px 24px;
     font-size: 15px;
-    color: white;
+    color: var(--topiarius-green);
     display: block;
     text-decoration: none;
     transition: opacity 0.2s ease-in-out;
