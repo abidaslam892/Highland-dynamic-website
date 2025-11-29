@@ -67,6 +67,55 @@
             color: var(--text-light);
         }
         
+        /* Content Image Styling */
+        .content-image {
+            overflow: hidden;
+            border-radius: 4px;
+        }
+        
+        .content-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .portfolio-image {
+            overflow: hidden;
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+        
+        .portfolio-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+        
+        .portfolio-item:hover .portfolio-image img {
+            transform: scale(1.05);
+        }
+        
+        .service-link-image {
+            overflow: hidden;
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+        
+        .service-link-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+        
+        .service-link-card:hover .service-link-image img {
+            transform: scale(1.05);
+        }
+        
         /* Services Grid */
         .services-grid {
             display: grid;
@@ -275,7 +324,9 @@
                     <p>Our team of mountain design experts has been crafting breathtaking alpine retreats for over two decades. We believe that meticulous planning is the key to unlocking the full potential of your property, transforming it into an oasis that will inspire and captivate you for years to come.</p>
                     <p>We transform both residential and commercial mountain properties, creating something truly unique with each project. Whether it's a private alpine sanctuary or a mountain resort experience, we bring your vision to life.</p>
                 </div>
-                <div class="content-image"></div>
+                <div class="content-image">
+                    <img src="images/services/design-hero.jpg" alt="Mountain landscape design">
+                </div>
             </div>
         </div>
     </section>
@@ -284,7 +335,9 @@
     <section class="content-section alt-bg">
         <div class="container-wide">
             <div class="content-columns reverse">
-                <div class="content-image"></div>
+                <div class="content-image">
+                    <img src="images/services/design-large.jpg" alt="Tailored landscape design">
+                </div>
                 <div class="content-text">
                     <h2>Tailored to Your Unique Needs</h2>
                     <p>We take the time to understand the unique characteristics of your site, from its topography and elevation to its climate and existing natural elements. This allows us to create a design that seamlessly integrates with its mountainous surroundings, enhancing the natural beauty of the area while also meeting your specific functional requirements.</p>
@@ -302,7 +355,9 @@
                     <h2>Picture Yourself in Your Dream Mountain Retreat</h2>
                     <p>Imagine hosting unforgettable gatherings on your mountain terrace, or basking in the tranquility of a private alpine garden surrounded by nature's beauty. Our team of passionate mountain designers will help you bring your vision to life, transforming your outdoor space into a place where you can relax, reconnect, and cherish every moment.</p>
                 </div>
-                <div class="content-image"></div>
+                <div class="content-image">
+                    <img src="images/services/depositphotos_38310113-stock-photo-beautiful-modern-terrace-with-a.jpg" alt="Mountain terrace design">
+                </div>
             </div>
         </div>
     </section>
@@ -311,7 +366,9 @@
     <section class="content-section alt-bg">
         <div class="container-wide">
             <div class="content-columns reverse">
-                <div class="content-image"></div>
+                <div class="content-image">
+                    <img src="images/services/photo-1611843467160-25afb8df1074.jpg" alt="Emotional landscape design">
+                </div>
                 <div class="content-text">
                     <h2>Beyond Aesthetics: Evoking Emotion</h2>
                     <p>We don't just create mountain sanctuaries that look stunning; we strive to evoke a desired atmosphere and emotion, ensuring that your alpine oasis reflects your personality and becomes a sanctuary where you truly connect with nature.</p>
@@ -474,15 +531,21 @@
             <h2>View Our Recent Work</h2>
             <div class="portfolio-grid-small">
                 <div class="portfolio-item">
-                    <div class="portfolio-image"></div>
+                    <div class="portfolio-image">
+                        <img src="images/portfolio/alpine-serenity.jpg" alt="Alpine Serenity Project">
+                    </div>
                     <h3>Alpine Serenity</h3>
                 </div>
                 <div class="portfolio-item">
-                    <div class="portfolio-image"></div>
+                    <div class="portfolio-image">
+                        <img src="images/portfolio/mountain-majesty.jpg" alt="Mountain Majesty Project">
+                    </div>
                     <h3>Mountain Majesty</h3>
                 </div>
                 <div class="portfolio-item">
-                    <div class="portfolio-image"></div>
+                    <div class="portfolio-image">
+                        <img src="images/portfolio/peak-perfection.jpg" alt="Peak Perfection Project">
+                    </div>
                     <h3>Peak Perfection</h3>
                 </div>
             </div>
@@ -531,15 +594,21 @@
             <h2>Explore All Our Services</h2>
             <div class="services-grid-small">
                 <a href="maintenance.html" class="service-link-card">
-                    <div class="service-link-image"></div>
+                    <div class="service-link-image">
+                        <img src="images/services/maintenance.jpg" alt="Maintenance Services">
+                    </div>
                     <h3>Maintenance Services</h3>
                 </a>
                 <a href="seasonal.html" class="service-link-card">
-                    <div class="service-link-image"></div>
+                    <div class="service-link-image">
+                        <img src="images/services/seasonal.jpg" alt="Seasonal Programs">
+                    </div>
                     <h3>Seasonal Programs</h3>
                 </a>
                 <a href="construction.html" class="service-link-card">
-                    <div class="service-link-image"></div>
+                    <div class="service-link-image">
+                        <img src="images/services/construction.jpg" alt="Construction Services">
+                    </div>
                     <h3>Construction & Installation</h3>
                 </a>
             </div>
