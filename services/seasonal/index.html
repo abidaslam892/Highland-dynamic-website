@@ -23,24 +23,66 @@
     <link rel="stylesheet" href="../../assets/css/spacing-fix.css">
 </head>
 <body>
+    <!-- Header -->
     <header class="header">
         <nav class="nav container-wide">
-            <a href="../../index.html" class="logo"><img src="/assets/images/highland-logo.svg" alt="Highland Logo">Highland</a>
-            <ul class="nav-menu">
-                <li><a href="../services/" class="active">Our Offerings</a></li>
-                <li><a href="../portfolio/">Our Portfolio</a></li>
-                <li><a href="../about/">About Us</a></li>
-                <li><a href="/resources.html">Resources</a></li>
-                <li><a href="../areas-served/">Areas Served</a></li>
-                <li><a href="../contact/">Contact Us</a></li>
-            </ul>
-            <div class="menu-toggle">
+            <a href="../../index.html" class="logo">
+                <img src="../../assets/images/highland-logo.svg" alt="Highland Logo">
+                <span>Highland</span>
+            </a>
+            
+            <div class="menu-toggle" id="menuToggle">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li class="has-dropdown">
+                    <a href="../../offerings.html" class="active">Our Offerings</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../../design.html">Landscape Design & Architecture</a></li>
+                        <li><a href="../../construction.html">Landscape Construction Services</a></li>
+                        <li><a href="../../seasonal.html">Luxury Seasonal Rotations</a></li>
+                        <li><a href="../../maintenance.html">Landscape Maintenance Services</a></li>
+                        <li><a href="../../luxury.html">Luxury Budget Pathways</a></li>
+                        <li><a href="../../special-projects.html">Special Projects</a></li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <a href="../../portfolio.html">Our Portfolio</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../../portfolio.html#construction">Construction Portfolio</a></li>
+                        <li><a href="../../portfolio.html#design">Design Studio Portfolio</a></li>
+                        <li><a href="../../portfolio.html#seasonal">Seasonal Rotations Portfolio</a></li>
+                        <li><a href="../../portfolio.html#gardening">Fine Gardening Portfolio</a></li>
+                    </ul>
+                </li>
+                <li><a href="../../about.html">About Us</a></li>
+                <li class="has-dropdown">
+                    <a href="../../resources.html">Resources</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../../blog.html">Blog</a></li>
+                        <li><a href="../../resources.html#guides">Guides & Tips</a></li>
+                        <li><a href="../../resources.html#faqs">FAQs</a></li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <a href="../../areas-served.html">Areas Served</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../../areas-served.html#mountain">Mountain Region</a></li>
+                        <li><a href="../../areas-served.html#alpine">Alpine Communities</a></li>
+                        <li><a href="../../areas-served.html#highland">Highland Areas</a></li>
+                    </ul>
+                </li>
+                <li><a href="../../contact.html">Contact Us</a></li>
+                <li><a href="../../shop.html">Shop</a></li>
+            </ul>
         </nav>
     </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero design-hero">
 
     <section class="page-hero service-hero">
         <div class="container-wide">
