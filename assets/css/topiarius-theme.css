@@ -118,12 +118,39 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 1em;
 }
 
-h1 { font-size: 2.5rem; }
-h2 { font-size: 2rem; }
-h3 { font-size: 1.75rem; }
-h4 { font-size: 1.5rem; }
-h5 { font-size: 1.25rem; }
-h6 { font-size: 1rem; }
+/* Topiarius Heading Sizes - Matching Source */
+h1 { 
+    font-size: 3rem;  /* 48px */
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+h2 { 
+    font-size: 2.25rem;  /* 36px */
+    font-weight: 300;
+    letter-spacing: 1.5px;
+}
+
+h3 { 
+    font-size: 1.75rem;  /* 28px */
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+h4 { 
+    font-size: 1.375rem;  /* 22px */
+    font-weight: 500;
+}
+
+h5 { 
+    font-size: 1.125rem;  /* 18px */
+    font-weight: 500;
+}
+
+h6 { 
+    font-size: 1rem;  /* 16px */
+    font-weight: 600;
+}
 
 p, ul, ol, div, span {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -189,10 +216,10 @@ a:hover {
 
 .logo {
     font-family: 'Montserrat', sans-serif !important;
-    font-weight: 600 !important;
-    letter-spacing: 1px;
+    font-weight: 700 !important;
+    letter-spacing: 1.5px;
     text-transform: uppercase;
-    font-size: 22px;
+    font-size: 20px;
     color: var(--topiarius-green);
     text-decoration: none;
     display: flex;
@@ -204,10 +231,10 @@ a:hover {
 .site-title,
 .site-title a {
     font-family: 'Montserrat', sans-serif !important;
-    font-weight: 600 !important;
-    letter-spacing: 1px;
+    font-weight: 700 !important;
+    letter-spacing: 1.5px;
     text-transform: uppercase;
-    font-size: 22px;
+    font-size: 20px;
     color: var(--topiarius-green);
 }
 
@@ -247,11 +274,11 @@ a:hover {
     text-transform: uppercase;
 }
 
-/* Navigation links spacing and sizing */
+/* Navigation links spacing and sizing - Topiarius exact match */
 .nav-menu > li > a,
 .main-navigation ul > li > a {
-    padding: 18px 24px;
-    font-size: 15px;
+    padding: 12px 20px;
+    font-size: 14px;
     color: var(--topiarius-green);
     display: block;
     text-decoration: none;
