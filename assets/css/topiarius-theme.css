@@ -3,22 +3,27 @@
    ================================================ */
 
 :root {
-    /* Brand Colors - Topiarius Green Theme */
-    --topiarius-green: #1a4d2e;
-    --topiarius-green-dark: #0f3320;
-    --topiarius-green-light: #2d6a4f;
+    /* Brand Colors - Topiarius Emerald Theme */
+    --topiarius-green: rgb(6, 80, 53);
+    --topiarius-green-dark: rgb(4, 60, 40);
+    --topiarius-green-light: rgb(84, 101, 87);
+    --topiarius-gold: rgb(211, 174, 67);
+    --topiarius-sage: rgb(142, 162, 156);
     --mountain-sage: #6FA362;
     --alpine-sky: #87CEEB;
     
     /* Neutral Colors */
-    --text-dark: #2c3e50;
-    --text-light: #666666;
+    --text-dark: #111111;
+    --text-light: #222222;
+    --text-muted: #666666;
     --border-color: #e1e8ed;
     --background-light: #f8f9fa;
     --background-white: #ffffff;
-    --footer-dark: #0f3320;
+    --background-cream: rgb(225, 205, 191);
+    --footer-dark: rgb(6, 80, 53);
     
     /* Accent Colors */
+    --accent-gold: rgb(211, 174, 67);
     --accent-warm: #d4a574;
     --accent-autumn: #c1693c;
     --success-green: #28a745;
