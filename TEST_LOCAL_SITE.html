@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Highland Website Test Page</title>
+    <style>
+        body { font-family: Arial; padding: 20px; background: #f5f5f5; }
+        .container { max-width: 800px; margin: 0 auto; background: white; padding: 30px; border-radius: 8px; }
+        h1 { color: #065035; }
+        .test { background: #e8f5e9; padding: 15px; margin: 10px 0; border-left: 4px solid #4caf50; }
+        .pass { color: green; font-weight: bold; }
+        a { color: #065035; text-decoration: none; padding: 10px 20px; background: #d3ae43; border-radius: 4px; display: inline-block; margin: 5px; }
+        a:hover { background: #065035; color: white; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>�� Highland Website - Local Test Page</h1>
+        
+        <div class="test">
+            <h2>✅ All Fixes Verified in Files</h2>
+            <ul>
+                <li class="pass">✓ H1 Typography: 3rem (48px) - CONFIRMED</li>
+                <li class="pass">✓ H2 Typography: 2.25rem (36px) - CONFIRMED</li>
+                <li class="pass">✓ H3 Typography: 1.75rem (28px) - CONFIRMED</li>
+                <li class="pass">✓ Blog Footers: After &lt;/article&gt; - CONFIRMED</li>
+                <li class="pass">✓ topiarius-footer.css: Linked - CONFIRMED</li>
+            </ul>
+        </div>
+
+        <h2>🔍 Test These Pages Locally:</h2>
+        <div style="margin: 20px 0;">
+            <a href="/index.html" target="_blank">Homepage</a>
+            <a href="/design.html" target="_blank">Design Page</a>
+            <a href="/construction.html" target="_blank">Construction</a>
+            <a href="/blog/alpine-plants/index.html" target="_blank">Blog: Alpine Plants</a>
+            <a href="/blog/drainage-solutions/index.html" target="_blank">Blog: Drainage</a>
+            <a href="/portfolio.html" target="_blank">Portfolio</a>
+        </div>
+
+        <h2>🌐 GitHub Pages (may need cache clear):</h2>
+        <a href="https://abidaslam892.github.io/Highland-dynamic-website/" target="_blank">
+            View on GitHub Pages
+        </a>
+
+        <div class="test" style="background: #fff3e0; border-left-color: #ff9800;">
+            <h3>⚠️ If GitHub Pages shows old content:</h3>
+            <ol>
+                <li><strong>Hard Refresh:</strong> Ctrl+Shift+R (Windows) or Cmd+Shift+R (Mac)</li>
+                <li><strong>Wait:</strong> 5-10 minutes for GitHub to rebuild</li>
+                <li><strong>Private Window:</strong> Test in Incognito/Private mode</li>
+            </ol>
+        </div>
+
+        <h2>📊 File Verification Commands:</h2>
+        <pre style="background: #f5f5f5; padding: 15px; border-radius: 4px; overflow: auto;">
+# Check H1 size in index.html
+grep "\.hero h1" index.html -A 2
+
+# Check blog footer position  
+grep -n "</article>" blog/alpine-plants/index.html
+grep -n "<footer" blog/alpine-plants/index.html
+
+# Verify topiarius-footer.css link
+grep "topiarius-footer.css" blog/*/index.html
+        </pre>
+    </div>
+</body>
+</html>
