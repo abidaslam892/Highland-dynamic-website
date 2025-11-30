@@ -20,11 +20,15 @@
     z-index: 10000 !important;
     margin-top: 0;
     pointer-events: auto !important;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
-/* Show dropdown on hover */
+/* Show dropdown on hover (desktop) */
 .nav-menu li.has-dropdown:hover .dropdown-menu,
-.nav-menu li.has-dropdown:focus-within .dropdown-menu {
+.nav-menu li.has-dropdown:focus-within .dropdown-menu,
+.nav-menu li.has-dropdown.active .dropdown-menu {
     display: block !important;
     opacity: 1;
     visibility: visible;
